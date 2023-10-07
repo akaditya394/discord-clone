@@ -1,11 +1,10 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs/app-beta";
 
 export default function Home() {
   return (
     <div>
-      <p>Hello World</p>
-      <Button variant="outline">Button</Button>
+      This is a protected route
+      <UserButton afterSignOutUrl="/" />
     </div>
   );
 }
