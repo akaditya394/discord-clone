@@ -101,6 +101,7 @@ const ServerSearch = ({ data }: ServerSearchProps) => {
                     <CommandItem
                       key={id}
                       onSelect={() => onClick({ id, type })}
+                      className="flex flex-row items-center"
                     >
                       {icon}
                       <span>{name}</span>
